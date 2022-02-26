@@ -1,0 +1,59 @@
+@font-face{
+  font-family: "brandon-grotesque";
+  src:url('../font/brandon-grotesque.otf');
+}
+
+.body{
+  font-size:16px;
+  }
+  p{
+  color:#6c6c6f;
+  font-size:1em;
+  }
+  h1,h2,h3,h4,h5,h6{text-transform:uppercase;}
+
+ .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+.banner{
+  background-image:url("../image/head.png");
+  text-align: center;
+    color: #fff;
+   
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-text{
+  padding:165px 0 70px 0;
+}
+.banner-heading{
+  font-size: 100px;
+  letter-spacing: 8px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "brandon-grotesque";
+}
+.banner-sub-heading{
+  font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+  color:#fff;
+}
+
+
+.text-intro{
+  width:90%;
+  margin:auto;
+  text-align:center;
+  padding-top:30px;
+}
