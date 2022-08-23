@@ -17,7 +17,7 @@
     $spp_bulan = $_POST['spp_bulan'];
     $total_tagihan = $_POST['total_tagihan'];
 
-    $sql = mysqli_query($koneksi, "UPDATE tbl_siswa inner join tbl_jurusan on tbl_siswa.id_jurusan = tbl_jurusan.id_jurusan SET nis_siswa='$nis_siswa',nama_siswa='$nama_siswa', kelas_siswa='$kelas_siswa', nama_jurusan='$nama_jurusan', tahun_ajaran='$tahun_ajaran', spp_bulan='$spp_bulan', total_tagihan='$total_tagihan' where id_siswa='$id_siswa'") or die(mysqli_error($koneksi));
+    $sql = mysqli_query($koneksi, "UPDATE tbl_siswa SET nis_siswa='$nis_siswa',nama_siswa='$nama_siswa', kelas_siswa='$kelas_siswa', nama_jurusan='$nama_jurusan', tahun_ajaran='$tahun_ajaran', spp_bulan='$spp_bulan', total_tagihan='$total_tagihan' where id_siswa='$id_siswa'") or die(mysqli_error($koneksi));
     if($sql){
         echo '<script>alert("Berhasil mengubah data siswa."); document.location="data_siswa.php";</script>';
         }else{
